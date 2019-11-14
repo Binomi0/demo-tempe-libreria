@@ -1,0 +1,44 @@
+[
+  {
+    "id": 0,
+    "isbn": "7d734c61-aeab-4835-8195-e4d2c029bb86",
+    "titulo": "SLAMBDA",
+    "autor": "Valencia Morrow"
+  },
+  {
+    "id": 1,
+    "isbn": "4d106c10-6e7e-4137-893d-e63efea6b164",
+    "titulo": "OVIUM",
+    "autor": "Kris Morin"
+  },
+  {
+    "id": 2,
+    "isbn": "5bdf9e0d-0ac3-432a-a394-b2ea4c4ab166",
+    "titulo": "ZOID",
+    "autor": "Rene West"
+  },
+  {
+    "id": 3,
+    "isbn": "617137fe-ca53-4104-8092-faeb5abcf5e1",
+    "titulo": "EXTRO",
+    "autor": "Margery Hess"
+  },
+  {
+    "id": 4,
+    "isbn": "01cf5c19-892c-4d4a-a36c-4c3d27da3259",
+    "titulo": "SENTIA",
+    "autor": "Lynne Strong"
+  },
+  {
+    "id": 5,
+    "isbn": "29b1c97c-a8d5-4770-8ee2-fdea4f0f416d",
+    "titulo": "OPTYK",
+    "autor": "Sonia Tanner"
+  },
+  {
+    "id": 6,
+    "isbn": "6c6f693d-6781-49fd-9b28-a92704b030a7",
+    "titulo": "IDETICA",
+    "autor": "Ewing Rowe"
+  }
+]
