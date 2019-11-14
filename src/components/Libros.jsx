@@ -11,8 +11,8 @@ export default ({ libros, title, alquilados = [], ...rest }) => (
         const libro = new LibroModel(id, autor, titulo, isbn);
         const alquilado = !!alquilados.find((a) => a.id === id);
         return (
-          <Grid item xl>
-            <Libro key={libro.id} libro={libro} alquilado={alquilado} {...rest} />
+          <Grid item xl key={libro.id}>
+            <Libro libro={libro} alquilado={alquilado} {...rest} />
           </Grid>
         );
       })}
