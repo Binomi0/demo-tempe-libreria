@@ -7,6 +7,7 @@ import './App.css';
 function App() {
   const [libro, setLibro] = useState(null);
   const [alquilados, setAlquilados] = useState([]);
+  const [error, setError] = useState('');
 
   const openModal = (libro) => {
     setLibro(libro);
@@ -18,12 +19,18 @@ function App() {
 
   const alquilar = (libro) => {
     if (!alquilados.find((a) => libro.id === a.id)) {
-      setAlquilados(alquilados.concat(libro));
+      if (alquilados.length > 3) {
+        setError('Has Alquilado el máximo de libros');
+      } else {
+        setAlquilados(alquilados.concat(libro));
+        setError('');
+      }
     }
     setLibro(null);
   };
   const devolver = (libro) => {
     setAlquilados(alquilados.filter((a) => a.id !== libro.id));
+    setError('');
   };
 
   return (
@@ -31,6 +38,7 @@ function App() {
       {libro && libro.titulo && (
         <Modal alquilar={alquilar} libro={libro} handleClose={closeModal} open={libro && true} />
       )}
+      <h4>{error && 'Has Alquilado el máximo de libros'}</h4>
       <Libros
         solicitar={openModal}
         libros={libros}
